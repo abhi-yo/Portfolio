@@ -1,7 +1,22 @@
 import React from "react";
 import { HiArrowNarrowRight } from "react-icons/hi";
+import { debounce } from "lodash";
 
 const Home = () => {
+  const scrollToWork = debounce(() => {
+    const element = document.getElementById("work");
+    if (element) {
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  }, 30); // Adjust the debounce time as needed
+
+  const handleScrollToWork = (e) => {
+    e.preventDefault();
+    scrollToWork();
+  };
   return (
     <div name="home" className="w-full h-screen bg-[#0a192f]">
       {/* Container */}
@@ -20,12 +35,16 @@ const Home = () => {
           looking for collaborating in web development projects.
         </p>
         <div className="flex items-center">
-          <button className="text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-pink-600 hover:border-pink-600">
+          <a
+            href="#work"
+            className="text-white group border-2 px-6 py-3 my-2 flex items-center hover:bg-pink-600 hover:border-pink-600"
+            onClick={handleScrollToWork}
+          >
             View Work
-            <span className="group-hover:rotate-90 duration-300">
+            <span className="group-hover:rotate-90 duration-3000">
               <HiArrowNarrowRight className="ml-3" />
             </span>
-          </button>
+          </a>
         </div>
       </div>
     </div>

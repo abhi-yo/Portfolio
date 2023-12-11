@@ -1,14 +1,15 @@
 import Razorpay from "../assets/projects/razorpay.png";
+import Planner from "../assets/projects/travelPlanner.png";
 import Ecomzy from "../assets/projects/ecomzy.png";
 import RandomGif from "../assets/projects/randomgif.png";
 
 export const data = [
   {
     id: 1,
-    name: "RazorPay Clone Application",
-    image: Razorpay,
-    github: "https://github.com/abhi-yo/razorpay-clone",
-    live: "https://razorpay-clone-done.netlify.app/",
+    name: "Travel Planner",
+    image: Planner,
+    github: "https://github.com/abhi-yo/plan-with-me",
+    live: "https://plan-with-qls9tnm6l-akshaaters.vercel.app/",
   },
   {
     id: 2,
