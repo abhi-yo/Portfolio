@@ -8,11 +8,15 @@ import { Link } from "react-scroll";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
+  const logoStyle = {
+    width: "50px", // Set the width to match your image's width
+    height: "50px", // Set the height to match your image's height
+    backgroundColor: "#191919", // Set the background color to match your navbar
+  };
+
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300">
-      <div>
-        <img src={Logo} style={{ width: "50px" }} />
-      </div>
+    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#191919] text-gray-300">
+      <div style={logoStyle}></div> {/* Placeholder for the logo */}
       {/* menu */}
       <ul className="hidden md:flex">
         <li>
@@ -50,7 +54,7 @@ const Navbar = () => {
         className={
           !nav
             ? "hidden"
-            : "absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center"
+            : "absolute top-0 left-0 w-full h-screen bg-[#191919] flex flex-col justify-center items-center"
         }
       >
         <li className="py-6 text-4xl">

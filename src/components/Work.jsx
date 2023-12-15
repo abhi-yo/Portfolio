@@ -65,7 +65,7 @@ const Work = () => {
     <div
       id="work"
       name="work"
-      className="flex flex-col w-full md:h-screen text-gray-300 bg-[#0a192f]"
+      className="flex flex-col w-full md:h-screen text-gray-300 bg-[#191919]"
     >
       <div className="max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full">
         <div className="pb-8">
