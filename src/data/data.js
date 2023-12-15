@@ -1,4 +1,3 @@
-import Razorpay from "../assets/projects/razorpay.png";
 import Planner from "../assets/projects/travelPlanner.png";
 import Ecomzy from "../assets/projects/ecomzy.png";
 import RandomGif from "../assets/projects/randomgif.png";
