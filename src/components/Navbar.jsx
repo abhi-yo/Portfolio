@@ -14,8 +14,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#191919] text-gray-300">
-      <div style={logoStyle}></div> {/* Placeholder for the logo */}
+    <div className="fixed w-full h-[80px] flex justify-center items-center px-4 bg-[#191919] text-gray-300">
       {/* menu */}
       <ul className="hidden md:flex">
         <li>
