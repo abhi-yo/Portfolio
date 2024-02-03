@@ -7,11 +7,6 @@ import { Link } from "react-scroll";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
   const handleClick = () => setNav(!nav);
-  const logoStyle = {
-    width: "50px", // Set the width to match your image's width
-    height: "50px", // Set the height to match your image's height
-    backgroundColor: "#191919", // Set the background color to match your navbar
-  };
 
   return (
     <div className="fixed w-full h-[80px] flex justify-center items-center px-4 bg-[#191919] text-gray-300">
