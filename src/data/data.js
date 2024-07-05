@@ -1,6 +1,7 @@
 import Planner from "../assets/projects/travelPlanner.png";
 import Ecomzy from "../assets/projects/ecomzy.png";
 import RandomGif from "../assets/projects/randomgif.png";
+import Ecommerce from "../assets/projects/ecommerce.png";
 
 export const data = [
   {
@@ -23,5 +24,12 @@ export const data = [
     image: RandomGif,
     github: "https://github.com/abhi-yo/gif-generator",
     live: "https://gif-generator-two.vercel.app/",
+  },
+  {
+    id: 4,
+    name: "E-Commerce Website",
+    image: Ecommerce,
+    github: "https://github.com/ok-akshat/ecommerce-frontend",
+    live: "https://ecommerce-frontend-iota-three.vercel.app/",
   },
 ];
